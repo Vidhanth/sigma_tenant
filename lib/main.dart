@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sigma_tenant/providers/db_provider.dart';
-import 'package:sigma_tenant/providers/search_provider.dart';
 import 'package:sigma_tenant/providers/spaces_provider.dart';
 import 'package:sigma_tenant/routes/api_route.dart';
 import 'package:sigma_tenant/routes/db_route.dart';
@@ -9,9 +8,6 @@ import 'package:sigma_tenant/routes/db_route.dart';
 void main() {
   runApp(MultiProvider(
     providers: [
-      ChangeNotifierProvider(
-        create: (_) => SearchProvider(),
-      ),
       ChangeNotifierProvider(
         create: (_) => SpacesProvider(),
       ),
